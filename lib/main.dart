@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:proteinium/navigation_screen.dart';
+import 'package:proteinium/views/navigation_screen/navigation_screen.dart';
 import 'package:proteinium/viewmodel/bottom_nav_viewmodel.dart';
 import 'package:proteinium/viewmodel/home_view_model.dart';
 import 'package:provider/provider.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proteinium/viewmodel/bottom_nav_viewmodel.dart';
-import 'package:proteinium/views/home_screen.dart';
+import 'package:proteinium/views/home_body/home_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:proteinium/resources/color_const.dart';
 import 'package:proteinium/resources/text_style_const.dart';

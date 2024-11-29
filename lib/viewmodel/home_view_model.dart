@@ -1,4 +1,4 @@
-// lib/viewmodels/home_view_model.dart
+
 import 'package:flutter/material.dart';
 import '../models/meals_category_model.dart';
 import '../services/api_service.dart';
@@ -16,7 +16,6 @@ class HomeViewModel extends ChangeNotifier {
     fetchMealsCategories();
   }
 
-  // Inside HomeViewModel's fetchMealsCategories method
 Future<void> fetchMealsCategories() async {
   _isLoading = true;
   notifyListeners();

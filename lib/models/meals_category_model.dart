@@ -1,4 +1,3 @@
-// lib/models/meals_category_model.dart
 
 class MealsCategoryModel {
   bool status;
