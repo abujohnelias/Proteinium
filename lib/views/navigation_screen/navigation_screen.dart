@@ -15,8 +15,8 @@ class BottomNavigationScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'P R O T E N I U M',
-          style: TextStyleConst.michromaMedium22.copyWith(
+          'PROTEINIUM',
+          style: TextStyleConst.michromaMedium12.copyWith(
             color: ColorConst.surface,
           ),
         ),
@@ -42,16 +42,16 @@ class BottomNavigationScreen extends StatelessWidget {
       ),
       bottomNavigationBar: Consumer<BottomNavViewModel>(
         builder: (context, provider, child) {
-          return BottomNavigationBar(
+          return BottomNavigationBar(elevation: 0,
             currentIndex: provider.currentIndex,
             onTap: (index) => provider.updateIndex(index),
-            selectedItemColor: ColorConst.surface,
-            unselectedItemColor: ColorConst.background,
+            selectedItemColor: ColorConst.textPrimary,
+            unselectedItemColor: ColorConst.textSecondary,
             showSelectedLabels: true,
             showUnselectedLabels: true,
             items: const [
               BottomNavigationBarItem(
-                backgroundColor: ColorConst.primary,
+                backgroundColor: ColorConst.transparent,
                 icon: Icon(Icons.home_outlined),
                 label: 'Home',
               ),

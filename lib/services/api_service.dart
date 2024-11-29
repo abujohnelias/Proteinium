@@ -1,10 +1,11 @@
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:proteinium/resources/url_const.dart';
 import '../models/meals_category_model.dart';
 
 class ApiService {
-  final String apiUrl = 'http://54.170.183.211/api/v1/get-mealcategories';
+  final String apiUrl = UrlConst.baseURL+UrlConst.categories;
 
   Future<MealsCategoryModel> fetchMealsCategory(String langId) async {
     final response = await http.post(
